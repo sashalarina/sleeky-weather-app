@@ -1,3 +1,73 @@
+body {
+  background-color: #e0ebf3;
+  color: #2c2c2e;
+  font-family: "Montserrat", sans-serif;
+}
 h1 {
-  color: blue;
+  font-size: 46px;
+  font-weight: 500;
+}
+li {
+  list-style: none;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+.sleeky-weather-app {
+  margin: 100px auto;
+  max-width: 484px;
+  height: 520px;
+  box-shadow: 2px 2px 2px 1px rgba(215, 220, 224, 0.4);
+  background-color: #f4f6f7;
+  border-radius: 30px;
+}
+
+.row {
+  padding: 20px 4% 8px;
+}
+
+.toggle-button-column {
+  text-align: right;
+  padding-right: 30px;
+}
+.current-weather-icon {
+  max-width: 90px;
+}
+.city-search-form {
+  padding: 8px 20px 20px 20px;
+  text-align: center;
+}
+.city-input-line {
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #e5dcde;
+  font-style: italic;
+  color: #2c2c2e;
+  box-shadow: 2px 2px 2px 1px rgba(215, 220, 224, 0.4);
+  width: 300px;
+  height: 30px;
+  padding-left: 15px;
+
+  border-style: none;
+}
+.city-input-line:focus {
+  outline-color: rgba(96, 154, 221, 0.737);
+}
+.city-input-line::placeholder {
+  opacity: 0.6;
+}
+
+.search-button {
+  width: 60px;
+  height: 30px;
+  font-size: 18px;
+  color: #fff;
+  background-color: rgba(96, 154, 221, 0.737);
+  border-radius: 20px;
+  border-style: none;
+  position: relative;
+  border-width: 1px;
+  box-shadow: 2px 2px 2px 1px rgba(215, 220, 224, 0.4);
 }
