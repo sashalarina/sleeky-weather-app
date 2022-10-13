@@ -35,10 +35,6 @@ footer {
 .current-weather-icon {
   max-width: 90px;
 }
-.datetime {
-  font-size: 18px;
-  text-decoration: solid;
-}
 
 .city-search-form {
   padding: 8px 20px 20px 20px;
