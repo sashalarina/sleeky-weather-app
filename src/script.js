@@ -40,9 +40,16 @@ function displayForecast(response) {
 
   let dateTimeElement = document.querySelector("#dateTime");
   dateTimeElement.innerHTML = formatDate(response.data.dt * 1000);
-}
 
+  let mainIconElement = document.querySelector("#mainIcon");
+  mainIconElement.setAttribute(
+    "src",
+    `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  mainIconElement.setAttribute("alt", response.data.weather[0].main);
+}
+let cityName = "London";
 let apiKey = "7a9230f00d808688d0e6dca4ff6ca11d";
-let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}&units=metric`;
+let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
 
 axios.get(apiUrl).then(displayForecast);
