@@ -39,7 +39,7 @@ function displayForecast(response) {
   humidityElement.innerHTML = response.data.main.humidity;
 
   let dateTimeElement = document.querySelector("#dateTime");
-  dateTimeElement.innerHTML = formatDate(response.data.dt);
+  dateTimeElement.innerHTML = formatDate(response.data.dt * 1000);
 }
 
 let apiKey = "7a9230f00d808688d0e6dca4ff6ca11d";
