@@ -10,7 +10,14 @@ h1 {
 li {
   list-style: none;
 }
+a {
+  text-decoration: none;
+  color: #88b2e4;
+}
 
+a:hover {
+  color: #78b1f7;
+}
 footer {
   text-align: center;
   font-size: 12px;
@@ -33,7 +40,16 @@ footer {
   padding-right: 30px;
 }
 .current-weather-icon {
-  max-width: 90px;
+  max-width: 120px;
+}
+
+.inactiveLink {
+  color: #2c2c2e;
+  cursor: default;
+}
+.inactiveLink:hover {
+  color: #2c2c2e;
+  cursor: default;
 }
 
 .city-search-form {
