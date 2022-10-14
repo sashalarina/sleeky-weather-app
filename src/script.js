@@ -58,7 +58,10 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
+  let unitElement = document.querySelector("#degree-unit");
   search(cityInputElement.value);
+  unitSwitcher.checked = false;
+  unitElement.innerHTML = "°C";
 }
 
 function displayFahreinheitTemperature(event) {
@@ -77,6 +80,21 @@ function displayCelciusTemperature(event) {
   fahreinheitLink.classList.remove("inactiveLink");
   celciusLink.classList.add("inactiveLink");
 }
+
+function switchUnits(event) {
+  let temperatureElement = document.querySelector("#temperature");
+  let unitElement = document.querySelector("#degree-unit");
+  let fahreinheitTemperature = Math.round(celciusTemperature * 1.8 + 32);
+
+  if (unitSwitcher.checked) {
+    temperatureElement.innerHTML = fahreinheitTemperature;
+    unitElement.innerHTML = "°F";
+  } else {
+    temperatureElement.innerHTML = Math.round(celciusTemperature);
+    unitElement.innerHTML = "°C";
+  }
+}
+
 let celciusTemperature = null;
 
 let form = document.querySelector("#search-form");
@@ -89,3 +107,6 @@ let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", displayCelciusTemperature);
 
 search("London");
+
+let unitSwitcher = document.querySelector("#unitswitcher");
+unitSwitcher.addEventListener("change", switchUnits);
