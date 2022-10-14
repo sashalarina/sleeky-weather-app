@@ -11,11 +11,14 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+      rel="stylesheet"
+    />
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
@@ -23,63 +26,64 @@
       <div class="sleeky-weather-app">
         <div class="row">
           <div class="col-12">
-            <div class="toggle-button-column"> 
-<input type="checkbox" name="" id="">
-</div></div>
-        </div>
-      <div class="row">
-          <div class="col-2">
-            <img 
-              src=""
-              alt=""
-             
-              class="current-weather-icon"
-              id="mainIcon"
-            />
-            <div class="row">
-<div class="col-2" id="description">
-            </div></div>
-          </div>
-        <div class="col-10"> 
-          <div class="descriptive-list">
-            <ul>
-              <li>
-                <h1 id="city"></h1>
-                </li>          
-              <li class="tempUnits">
-                <h2> <span id="temperature"> 17</span> <a href="#" class="inactiveLink" id="celcius-link">°C</a>|<a href="#" id="fahreinheit-link">°F</a> </h2>
-                <li> Last update: <span class="datetime" id="dateTime"></span>
-                  
-                </li>
-              </li>
-                
-              <li>
-                    Wind: <span id="windspeed"></span> km/h
-                </li>
-                <li>
-                  Humidity: <span id="humidity"></span>%
-                </li>
-            </ul>
+            <div class="toggle-button-column">
+              <input type="checkbox" name="" id="" />
             </div>
           </div>
-       </div>
+        </div>
+        <div class="row">
+          <div class="col-2">
+            <img src="" alt="" class="current-weather-icon" id="mainIcon" />
+            <div class="row">
+              <div
+                class="col-2"
+                class="weather-description"
+                id="description"
+              ></div>
+            </div>
+          </div>
+          <div class="col-10">
+            <div class="descriptive-list">
+              <ul>
+                <li>
+                  <h1 id="city"></h1>
+                </li>
+                <li class="tempUnits">
+                  <h2>
+                    <span id="temperature"> 17</span>
+                    <a href="#" class="inactiveLink" id="celcius-link">°C</a>|<a
+                      href="#"
+                      id="fahreinheit-link"
+                      >°F</a
+                    >
+                  </h2>
+                </li>
+                <li>
+                  Last update: <span class="datetime" id="dateTime"></span>
+                </li>
 
-      <form action="search" class="city-search-form" id="search-form">
-        <input
-          type="text"
-          name=""
-          id="city-input"
-          placeholder="Enter city name"
-          autocomplete="off"
-          autofocus="on"
-          class="city-input-line"
-        />
-        <input type="button" type="submit" value="GO" class="search-button" />
-      </form>
-    
+                <li>Wind: <span id="windspeed"></span> km/h</li>
+                <li>Humidity: <span id="humidity"></span>%</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <form action="search" class="city-search-form" id="search-form">
+          <input
+            type="text"
+            name=""
+            id="city-input"
+            placeholder="Enter city name"
+            autocomplete="off"
+            autofocus="on"
+            class="city-input-line"
+          />
+          <input type="button" type="submit" value="GO" class="search-button" />
+        </form>
+      </div>
     </div>
-    </div>
-    </div>
+
     <footer>
       <a
         href="https://github.com/sashalarina/sleeky-weather-app"
@@ -88,7 +92,7 @@
       >
       by Sasha Larina
     </footer>
-  </div>
+
     <script src="src/script.js"></script>
   </body>
 </html>
