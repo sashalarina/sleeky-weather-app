@@ -24,9 +24,9 @@ footer {
   font-size: 12px;
 }
 .sleeky-weather-app {
-  margin: 100px auto;
+  margin: 50px auto;
   max-width: 484px;
-  height: 520px;
+  height: 600px;
   box-shadow: 2px 2px 2px 1px rgba(215, 220, 224, 0.4);
   background-color: #f4f6f7;
   border-radius: 30px;
