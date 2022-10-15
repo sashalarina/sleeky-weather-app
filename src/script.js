@@ -58,8 +58,9 @@ function search(city) {
 function handleSubmit(event) {
   event.preventDefault();
   let cityInputElement = document.querySelector("#city-input");
-  let unitElement = document.querySelector("#degree-unit");
+
   search(cityInputElement.value);
+  let unitElement = document.querySelector("#degree-unit");
   unitSwitcher.checked = false;
   unitElement.innerHTML = "°C";
 }
