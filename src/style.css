@@ -6,6 +6,7 @@ body {
 h1 {
   font-size: 46px;
   font-weight: 500;
+  padding-top: 15px;
 }
 li {
   list-style: none;
@@ -39,11 +40,20 @@ footer {
   text-align: right;
   padding-right: 30px;
 }
+
+.current-weather {
+  margin: 3%;
+  position: relative;
+}
 .current-weather-icon {
-  max-width: 120px;
+  width: 100px;
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
 }
-
+.weather-description {
+  font-size: 18px;
+  position: relative;
+  left: 22px;
+}
 .inactiveLink {
   color: #2c2c2e;
   cursor: default;
