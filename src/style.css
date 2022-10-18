@@ -54,14 +54,6 @@ footer {
   position: relative;
   left: 22px;
 }
-.inactiveLink {
-  color: #2c2c2e;
-  cursor: default;
-}
-.inactiveLink:hover {
-  color: #2c2c2e;
-  cursor: default;
-}
 
 .city-search-form {
   padding: 8px 20px 20px 20px;
