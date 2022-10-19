@@ -129,7 +129,8 @@ footer {
   text-align: center;
 }
 
-.day1-icon {
+.forecast-icon {
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.2));
 }
 
 strong {
