@@ -54,7 +54,6 @@ footer {
   position: relative;
   left: 22px;
 }
-
 .city-search-form {
   padding: 8px 20px 20px 20px;
   text-align: center;
@@ -125,4 +124,18 @@ footer {
   font-weight: 200;
   background-color: rgba(96, 154, 221, 0.737);
   left: 38px;
+}
+.forecast {
+  text-align: center;
+}
+
+.day1-icon {
+}
+
+strong {
+  font-weight: 500;
+  opacity: 0.6;
+}
+.forecast-temp-min {
+  opacity: 0.6;
 }
